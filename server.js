@@ -5,9 +5,10 @@
 // import express
 const express = require('express');
 
-// import file
+// import User Route file
 const userRouter = require('./api/routes/userRoute')
-// const postRouter = require('./api/routes/postRoutes')
+
+// import Contact Route file
 const contactRouter = require('./api/routes/contactRoutes')
 
 // import bodyParser {third party modules --> data pass করার জন্য use হয়}
@@ -74,9 +75,9 @@ app.use(cors())
 /**
 *! -*-*-*-*-*-*-*-*-*- api Directory Route/Path Start -*-*-*-*-*-*-*-*-*-
 */
-// path add in other file
+// example.com/api/users --> path add in other file
 app.use('/api/users', userRouter)
-// app.use('/posts', postRouter)
+// example.com/api/contact --> path add in other file
 app.use('/api/contact', contactRouter)
 /**
 //* -*-*-*-*-*-*-*-*-*- api Directory Route/Path End -*-*-*-*-*-*-*-*-*-

@@ -48,6 +48,7 @@ const userLoginController = (req, res, next) => {
                     */
                     // its result = true ?
                     if (result) {
+                        // Token Create
                         let token = jwt.sign({ email: user.email, _id: user._id }, 'SECRET_KEY', { expiresIn: '2h' })
                         res.json({
                             message: 'Login Successful',

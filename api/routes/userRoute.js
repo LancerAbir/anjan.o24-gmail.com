@@ -8,8 +8,8 @@ const userRouter = require('express').Router()
 // import route controller
 const userController = require('../RouterController/userRouterController')
 
-// import authenticate file
-const authenticate = require('../middleware/authenticate')
+// import authenticate JSON Web Token file
+const authenticate = require('../verifyToken/authenticate')
 
 
 
